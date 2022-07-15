@@ -48,7 +48,7 @@ bool intersect(point a, point b, point c, point d){
 
 point intersect_point(point a, point b, point c, point d){
     int adc = (d-a) ^ (c-a);
-    int bdc = (d-b) ^ (b-a);
+    int bdc = (d-b) ^ (c-b);
     return (a * bdc + b * adc) / (adc + bdc);
 }
 
