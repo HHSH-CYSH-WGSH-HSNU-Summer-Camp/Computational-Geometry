@@ -53,7 +53,7 @@ point intersect_point(point a, point b, point c, point d){
 }
 
 point projection(point a, point b, point c){
-    return (c-a) * ((b-a) * (c-a)) / abs(c-a) ;
+    return (b-a) * ((b-a) * (c-a)) / (abs(b-a) * abc(b-a)) ;
 }
 
 vector<point> convex_hull(vector<point> points){
